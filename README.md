@@ -1,87 +1,112 @@
 # R Data Dashboard
 
-An interactive R Shiny dashboard for data analysis and visualisation of public datasets.
+![R](https://img.shields.io/badge/R-4.0%2B-blue) ![Shiny](https://img.shields.io/badge/Shiny-1.7%2B-brightgreen) ![License](https://img.shields.io/badge/License-MIT-green) ![Status](https://img.shields.io/badge/Status-Active-brightgreen)
 
-## Features
+An interactive web dashboard built in R using Shiny for exploring, cleaning, and visualising datasets dynamically. Designed to make data storytelling intuitive and accessible without requiring front-end coding.
 
-- Interactive dashboard built with **R Shiny**
-- Data cleaning and manipulation using **dplyr** and **tidyr**
-- Beautiful visualisations using **ggplot2**
-- Summary statistics and exploratory data analysis (EDA)
-- Filterable and reactive UI components
-- Works with public datasets (e.g. crime stats, student performance, COVID-19 data)
+---
 
-## Technologies Used
+## Key Features
 
-| Tool | Purpose |
-|------|---------|
-| R | Core language |
-| Shiny | Interactive web dashboard |
-| ggplot2 | Data visualisation |
-| dplyr | Data manipulation |
-| tidyr | Data tidying |
-| readr | CSV/data import |
-| RStudio | Development environment |
+- **Interactive Shiny UI** with reactive inputs — filters, sliders, and dropdowns update all charts instantly
+- **Exploratory Data Analysis (EDA)** — summary statistics, distributions, and correlation matrices
+- **Dynamic visualisations** using ggplot2 — bar, line, scatter, histogram, and boxplot charts
+- **Data cleaning and transformation** with dplyr and tidyr
+- **CSV dataset support** with automated column detection and type inference
+- **Modular architecture** — clean separation into `global.R`, `ui.R`, and `server.R`
+- **Statistical summaries** — mean, median, standard deviation, min/max per column
+- **Responsive layout** using Shiny's fluid grid system
+
+---
+
+## Real-Life Use Cases
+
+| Use Case | Description |
+|---|---|
+| Business Analytics | Sales or operations teams explore KPI datasets interactively without writing code |
+| Healthcare Research | Visualise patient data trends, treatment outcomes, or demographic distributions |
+| Academic Reporting | Students and researchers present data-driven findings with dynamic visual reports |
+| Public Dataset Exploration | Rapidly explore open datasets (e.g. crime stats, COVID-19, student performance) |
+| Dashboard Prototyping | Quickly prototype data dashboards before building production-grade BI tools |
+
+---
 
 ## Project Structure
 
 ```
 r-data-dashboard/
 ├── app/
-│   ├── ui.R             # User interface layout
-│   ├── server.R         # Server logic and reactivity
-│   └── global.R         # Shared variables and libraries
-├── data/
-│   └── dataset.csv      # Sample public dataset
+│   ├── global.R          # Global libraries and shared data loading
+│   ├── ui.R              # User interface layout and input controls
+│   └── server.R          # Reactive server logic and plot generation
 ├── analysis/
-│   └── eda.R            # Exploratory data analysis script
-├── www/
-│   └── styles.css       # Custom styling
-├── README.md
-└── requirements.R       # Required packages
+│   └── eda.R             # Standalone EDA script
+├── data/
+│   └── dataset.csv       # Sample dataset for testing
+├── requirements.R        # R package dependencies
+└── README.md
 ```
 
-## Getting Started
+---
 
-### Prerequisites
+## Technologies Used
 
-- R 4.0+
-- RStudio
-- Required packages (install via `requirements.R`)
+| Tool | Purpose |
+|---|---|
+| R 4.0+ | Core language |
+| Shiny | Interactive web application framework |
+| ggplot2 | Data visualisation and charting |
+| dplyr | Data manipulation and filtering |
+| tidyr | Data reshaping and cleaning |
+| RStudio | Development environment |
 
-### Installation
+---
+
+## Installation
 
 ```r
-# Clone the repo
-git clone https://github.com/Mainul009/r-data-dashboard.git
+# Install required R packages
+install.packages(c("shiny", "ggplot2", "dplyr", "tidyr"))
 
-# Install required packages
+# Or run the requirements script
 source("requirements.R")
-
-# Run the Shiny app
-shiny::runApp("app/")
 ```
 
-## Dashboard Panels
+---
 
-1. **Overview** — Summary stats and key metrics
-2. **Visualisations** — Bar charts, histograms, scatter plots
-3. **Data Table** — Interactive, filterable dataset
-4. **EDA** — Correlation and distribution analysis
+## Usage
+
+```r
+# Open RStudio and run the Shiny app
+library(shiny)
+runApp("app/")
+```
+
+The dashboard will open in your browser. Load any `.csv` dataset using the file upload control, then use the filters and dropdowns to explore your data interactively.
+
+---
 
 ## Learning Goals
 
-This project reinforces:
-- Data analysis and statistics using R
-- RStudio workflow and project organisation
-- Building reactive web applications with Shiny
-- Data visualisation best practices with ggplot2
-- Working with real-world public datasets
+This project was built as part of my BSc Computing Systems studies to:
+- Apply statistical analysis and EDA techniques in R
+- Build interactive web applications with Shiny
+- Practice data cleaning and transformation with dplyr/tidyr
+- Develop professional data visualisation skills using ggplot2
+- Understand reactive programming patterns in Shiny
+
+---
 
 ## Author
 
-**Mainul Islam Tasin** — BSc Computing Systems, Ulster University
+**Mainul Islam Tasin**  
+BSc Computing Systems Student | Ulster University  
+[LinkedIn](https://www.linkedin.com/in/mainul-islam-tasin-849072361/) | [GitHub](https://github.com/Mainul009)
+
+---
 
 ## License
 
-MIT License
+MIT License — see [LICENSE](LICENSE) for details.
+
+<!-- Updated: March 2026 -->
