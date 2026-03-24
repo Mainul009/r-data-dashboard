@@ -1,0 +1,31 @@
+student_id,name,gender,age,subject,grade,attendance,study_hours,score
+1,Alice,Female,19,Mathematics,A,95,8,88
+2,Bob,Male,20,Computer Science,B,88,6,74
+3,Carol,Female,18,Mathematics,A,92,9,91
+4,David,Male,21,Physics,C,76,4,62
+5,Eve,Female,19,Computer Science,A,98,10,95
+6,Frank,Male,20,Mathematics,B,84,6,70
+7,Grace,Female,22,Physics,A,90,8,85
+8,Hank,Male,18,Computer Science,C,70,3,58
+9,Iris,Female,20,Mathematics,B,87,7,75
+10,Jack,Male,21,Physics,B,82,5,68
+11,Karen,Female,19,Computer Science,A,96,9,93
+12,Leo,Male,20,Mathematics,C,74,4,60
+13,Maya,Female,21,Physics,A,91,8,87
+14,Nathan,Male,18,Computer Science,B,85,6,72
+15,Olivia,Female,22,Mathematics,A,94,9,90
+16,Pete,Male,19,Physics,C,71,3,55
+17,Quinn,Female,20,Computer Science,B,88,7,76
+18,Ryan,Male,21,Mathematics,A,93,9,89
+19,Sara,Female,18,Physics,B,80,5,66
+20,Tom,Male,22,Computer Science,A,97,10,94
+21,Uma,Female,19,Mathematics,C,73,4,59
+22,Victor,Male,20,Physics,B,86,6,71
+23,Wendy,Female,21,Computer Science,A,95,9,92
+24,Xavier,Male,18,Mathematics,B,83,5,69
+25,Yara,Female,20,Physics,A,90,8,84
+26,Zach,Male,22,Computer Science,C,68,3,52
+27,Amy,Female,19,Mathematics,A,96,9,91
+28,Ben,Male,21,Physics,B,84,6,70
+29,Chloe,Female,20,Computer Science,A,97,10,95
+30,Dan,Male,18,Mathematics,C,72,4,58
